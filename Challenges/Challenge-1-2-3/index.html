@@ -19,51 +19,159 @@ Desafío 3:
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Damian-Bravi-Profile</title>
 </head>
 <style>
-   body {
-       background-color: rgba(31, 102, 58, 0.993);
-       color: white;
-   }
+    * {
+        text-align: center;
+        margin: 2px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.3;
+    }
+
+    body p {
+        font-size:14px;
+    }
+    ul {
+        font-size:14px;
+    }
+    
+    header {
+        background-color: black;
+        margin: 0px;
+        padding: 15px;
+        border: 1px solid white;
+        color: white;
+    }
+
+    #Resumen {
+        color: white;
+        background-color: rgba(28, 87, 51, 0.993);
+        padding-bottom: 10px;
+    }
+    #Resumen h2 {
+        background-color: rgba(47, 122, 76, 0.993);
+        padding:5px;
+    }
+
+    img {
+        border: 5px solid aliceblue;
+        position: relative;
+        bottom: 20px;
+        width: 130px;
+        height: auto;
+    }
+
+    ul {
+        list-style: none
+    }
+
+    #Exp {
+        background-color: rgba(47, 122, 76, 0.993);
+        padding: 0px;
+        border: 1px solid white;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    #Exp h2 {
+        background-color: rgb(122, 128, 122);
+        padding:5px;
+        
+    }
+
+    #footer {
+        color: white;
+        background-color: black;
+        
+
+    }
+
+    #footer1 {
+        float: left;
+        width: 45%;
+        background-color: black;
+        padding: 10px;
+    }
+    #footer1 h3 {
+        padding-bottom: 10px;
+    }
+    #footer2 {
+        float: right;
+        background-color: black;
+        width: 44%;
+        height: 208px;
+        padding: 10px;
+        background-color: rgb(122, 128, 122);
+    }
+    
+    form::text-area {
+        color: black;
+      
+    }
+
+    textarea::placeholder {
+        line-height: 80px;
+        color: black;
+    }
 </style>
 
 <body>
-    <h1>Damian Bravi</h1>
-<h4>Aspirante a front-end developer
-San Cristóbal -<br>
-Ciudad Autónoma de Buenos Aires</h4>
-<h3>Extracto</h3>
-<p> Actualmente busco iniciarme en desarrollo en front-end y
-estudiando fullstack developer en bootcamp de NUCBA.</p>
-<p>Me considero autodidacta, exigente, me gustan los retos y soy un
-apasionado de la tecnología.</p> 
-<p>Me gusta leer y aprender, para así
-mantenerme actualizado y ofrecer lo mejor de mi trabajo.</p>
-<h3>Experiencia</h3>
-<h3>Outsourcing sa </h3>
-<h4>Técnico de soporte a usuarios</h4>
-<h5>diciembre de 2016 - noviembre de 2019 (3 años)</h5>
-<p>Buenos Aires, Provincia de Buenos Aires, Argentina <br>
-• Instalación Windows 7 y Windows 10 a usuarios remotos.<br>
-• Configuración de wifi.<br>
-• Servicio de Impresoras en red<br>
-• Instalación productos de la línea Microsoft Office; servicios, soluciones,<br>
-aplicativos y sistemas de información.<br>
-• Soporte de Hardware/red.<br>
-• Soporte a Impresoras.<br>
-• Configuración de telefonía celular a usuarios de habla hispana/inglesa.<br>
-</p>
-<h3>Contacto:</h3>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-     <label for="textarea">Dejar un mensaje aquí</label><br>
-    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-  </form>
+    <header>
+        <h1><u>Damian Bravi</u></h1>
+        <!-- <div>
+            <img src="/Images/Screenshot_20220324-140206_Instagram (1).jpg" alt="Damian Bravi foto" width="200"
+                height="200" style="float:right">
+        </div> -->
+        <h3 id="title2">Aspirante a front-end developer</h3>
+    <p>Ciudad Autónoma de Buenos Aires</p>
+    </header>
+    <div id="Resumen">
+        <div class="text-resumen">
+            <h2>Resumen</h2>
+            <p> Actualmente busco iniciarme en desarrollo en front-end y <br>
+                estoy estudiando fullstack developer en bootcamp de NUCBA. <br>
+                Me considero autodidacta, exigente, me gustan los retos y soy <br>
+                apasionado por la tecnología. <br>
+            </p>
+        </div>
+    </div>
+    <div id="Exp">
+        <h2>Experiencia</h2>
+        <h4>-Outsourcing SA-</h4>
+        <h4>Técnico de soporte a usuarios</h4>
+        <h4>Diciembre de 2016 - noviembre de 2019 (3 años)</h4>
+        <h5>Buenos Aires, Provincia de Buenos Aires, Argentina </h5><br>
+        <ul>
+            <li>Instalación Windows 7 y Windows 10 a usuarios remotos.</li>
+            <li>Configuración de wifi.</li>
+            <li>Servicio de Impresoras en red</li>
+            <li>Instalación productos de la línea Microsoft Office; servicios, soluciones,
+                aplicativos y sistemas de información.</li>
+            <li>Soporte de Hardware/red.</li>
+            <li>Soporte a Impresoras.</li>
+            <li>Configuración de telefonía celular a usuarios de habla hispana/inglesa.</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div id="footer1">
+            <h3>Contactame!:</h3>
+            <form>
+                <label for="fname">Tu nombre:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <br>
+                <textarea name="textarea" rows="6" cols="55" placeholder="Escribe tu mensaje aquí" style="width:50%;height:50%"></textarea>
+            </form>
+        </div>
+        <div id="footer2">
+            <p>Links</p>
+        </div>
+    </div>
 </body>
+
 </html>
