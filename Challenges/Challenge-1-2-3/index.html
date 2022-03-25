@@ -46,7 +46,8 @@ Desafío 3:
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
-        height: 120px;
+        height: 100px;
+        border: 4px solid rgb(180, 185, 180);
     }
 
     .boxLeft {
@@ -79,10 +80,6 @@ Desafío 3:
         left: 50px;
     }
 
-    ul {
-        font-size: 14px;
-    }
-
     #Resumen {
         color: white;
         background-color: rgba(28, 87, 51, 0.993);
@@ -112,6 +109,12 @@ Desafío 3:
     ul {
         list-style: none;
         margin: 0px;
+        font-size: 14px;
+    }
+
+    #footer {
+        border: 5px solid green;
+        height: 232px;
     }
 
     #footer1 {
@@ -119,6 +122,7 @@ Desafío 3:
         width: 50%;
         background-color: black;
         margin-top: 0px;
+        height:inherit;
     }
 
     #footer1 h3 {
@@ -130,7 +134,7 @@ Desafío 3:
         float: right;
         color: black;
         width: 50%;
-        height: 232px;
+        height: inherit;
         background-color: white;
         margin: 0px;
     }
@@ -142,11 +146,11 @@ Desafío 3:
 
     form::text-area {
         color: black;
-
     }
 
+    
     textarea::placeholder {
-        line-height: 80px;
+        line-height: 50px;
         color: black;
     }
 
@@ -165,7 +169,7 @@ Desafío 3:
             <img src="/Images/Screenshot_20220324-140206_Instagram (1).jpg">
         </div>
         <div class="boxCenter">
-            <h1>Damian Bravi</h1>
+            <h1><u>Damian Bravi</u></h1>
             <h3>Front-end developer<h3>
                     <p>Ciudad Autónoma de Buenos Aires</p>
         </div>
@@ -196,29 +200,29 @@ Desafío 3:
                 <li>Configuración de telefonía celular a usuarios de habla hispana/inglesa.</li>
             </ul>
         </div>
+        <div id="footer">
+            <div id="footer1">
+                <h3>Contactame!</h3>
+                <form>
+                    <label for="fname" style="color:white">Tu nombre:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <br>
+                    <textarea name="textarea" rows="3" cols="55" placeholder="Escribe tu mensaje aquí"
+                    style="width:90%;height:50%"></textarea> <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div id="footer2">
+                <p style="font-size:34px">Mis Links</p>
+                <div id="icons" ;>
+                    <a href="https://www.linkedin.com/in/damian-bravi/" target="_blank"> <i
+                            class="fa fa-linkedin-square" style="font-size:56px"></i></a>
+                    <a href="https://github.com/DBravi" target="_blank"><i class="fa fa-github"
+                            style="font-size:56px"></i></a>
 
-        <div id="footer1">
-            <h3>Contactame!</h3>
-            <form>
-                <label for="fname" style="color:white">Tu nombre:</label>
-                <input type="text" id="fname" name="fname"><br>
-                <br>
-                <textarea name="textarea" rows="6" cols="55" placeholder="Escribe tu mensaje aquí"
-                    style="width:50%;height:50%"></textarea> <br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-        <div id="footer2">
-            <p style="font-size:36px">Mis Links</p>
-            <div id="icons" ;>
-                <a href="https://www.linkedin.com/in/damian-bravi/" target="_blank"> <i class="fa fa-linkedin-square"
-                        style="font-size:56px"></i></a>
-                <a href="https://github.com/DBravi" target="_blank"><i class="fa fa-github"
-                        style="font-size:56px"></i></a>
-
+                </div>
             </div>
         </div>
-
     </div>
 </body>
 
